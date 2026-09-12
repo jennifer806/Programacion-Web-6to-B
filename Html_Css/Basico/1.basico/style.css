@@ -1,8 +1,11 @@
-.padre {
+.container {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(158, 252, 246);
     display: flex;
-    flex-direction: row;
-
+    border-radius: 25px;
 }
+
 
 .cuadro1 {
     width: 250px;
