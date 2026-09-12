@@ -10,7 +10,7 @@ body {
     background: white;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     gap: 100px 50px;
 }
