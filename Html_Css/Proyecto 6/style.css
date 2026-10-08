@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+
+    background-color: #f8f1e8;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 80px 80px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    padding: 10px 80px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e5ddd4;
+
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 70px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* MENU */
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    color: #4a3930;
+
+    text-decoration: none;
+
+    margin-left: 35px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+.navigation li a:hover {
+    color: #e3bd8d;
+}
+
+
+/* SHOP NOW */
+
+.shop {
+    background-color: #4a3930;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.shop:hover {
+    background-color: #e3bd8d;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.content {
+    position: relative;
+
+    width: 100%;
+    max-width: 1250px;
+
+    min-height: 650px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* =========================
+   TEXTO
+   ========================= */
+
+.text {
+    width: 50%;
+
+    padding-left: 20px;
+
+    z-index: 2;
+}
+
+
+/* NOMBRE DE LA MARCA */
+
+.small-title {
+    color: #a77f59;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+
+/* TITULO */
+
+.text h2 {
+    color: #2b211c;
+
+    font-size: 6em;
+
+    font-weight: 300;
+
+    line-height: 0.85em;
+
+    margin-bottom: 30px;
+}
+
+.text h2 span {
+    display: block;
+
+    color: #a77a4e;
+
+    font-weight: bold;
+}
+
+
+/* DESCRIPCION */
+
+.description {
+    color: #765f52;
+
+    font-size: 16px;
+
+    line-height: 1.7em;
+
+    max-width: 480px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTON
+   ========================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #4a3930;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 16px 30px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background-color: #a77a4e;
+}
+
+
+/* =========================
+   NOTAS
+   ========================= */
+
+.details {
+    display: flex;
+
+    gap: 40px;
+
+    margin-top: 45px;
+}
+
+.details div {
+    border-left: 2px solid #b99468;
+
+    padding-left: 12px;
+}
+
+.details h3 {
+    color: #2b211c;
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+.details p {
+    color: #876f61;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   PRODUCTO
+   ========================= */
+
+.content-img {
+    position: relative;
+
+    width: 50%;
+
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CIRCULO VAINILLA */
+
+.vanilla-circle {
+    position: absolute;
+
+    width: 470px;
+    height: 510px;
+
+    background-color: #e6d0b7;
+
+    border-radius: 50%;
+}
+
+
+/* IMAGEN */
+
+.imgMuestra {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 440px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.imgMuestra img {
+    width: 100%;
+
+    max-width: 440px;
+
+    max-height: 560px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* REDES */
+
+.social {
+    display: flex;
+
+    gap: 15px;
+}
+
+.social a {
+    color: #4a3930;
+
+    font-size: 20px;
+
+    transition: 0.25s;
+}
+
+.social a:hover {
+    color: #b99468;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    color: #876f61;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .main {
+        padding: 110px 40px 80px;
+    }
+
+    header {
+        padding: 10px 40px;
+    }
+
+    .navigation li a {
+        margin-left: 20px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .text h2 {
+        font-size: 4.5em;
+    }
+
+    .content-img {
+        height: 500px;
+    }
+
+    .vanilla-circle {
+        width: 380px;
+        height: 380px;
+    }
+
+    .imgMuestra {
+        max-width: 370px;
+    }
+
+    .footer {
+        padding: 18px 40px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .main {
+        min-height: 100vh;
+
+        padding: 100px 20px 30px;
+
+        overflow-y: auto;
+    }
+
+
+    /* HEADER */
+
+    header {
+        height: 75px;
+
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 55px;
+    }
+
+    .navigation li a {
+        margin-left: 10px;
+
+        font-size: 10px;
+    }
+
+    .shop {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+        min-height: auto;
+    }
+
+
+    /* TEXTO */
+
+    .text {
+        width: 100%;
+
+        padding-left: 0;
+    }
+
+    .small-title {
+        font-size: 10px;
+
+        margin-bottom: 15px;
+    }
+
+    .text h2 {
+        font-size: 4em;
+
+        line-height: 0.9em;
+
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        padding: 14px 25px;
+    }
+
+
+    /* NOTAS */
+
+    .details {
+        justify-content: center;
+
+        gap: 25px;
+
+        margin-top: 30px;
+    }
+
+
+    /* PRODUCTO */
+
+    .content-img {
+        width: 100%;
+
+        height: 360px;
+
+        margin-top: 10px;
+    }
+
+    .vanilla-circle {
+        width: 290px;
+        height: 290px;
+    }
+
+    .imgMuestra {
+        max-width: 300px;
+    }
+
+    .imgMuestra img {
+        max-height: 340px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        position: relative;
+
+        padding: 15px 0 0;
+
+        margin-top: 15px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .social {
+        gap: 15px;
+    }
+}
