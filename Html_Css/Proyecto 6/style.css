@@ -22,9 +22,7 @@
 }
 
 
-/* =========================
-   HEADER
-   ========================= */
+
 
 header {
     position: absolute;
@@ -49,7 +47,7 @@ header {
 }
 
 
-/* LOGO */
+
 
 .logo-link {
     display: flex;
@@ -66,7 +64,7 @@ header {
 }
 
 
-/* MENU */
+
 
 .navigation {
     display: flex;
@@ -95,7 +93,7 @@ header {
 }
 
 
-/* SHOP NOW */
+
 
 .shop {
     background-color: #4a3930;
@@ -119,9 +117,7 @@ header {
 }
 
 
-/* =========================
-   HERO
-   ========================= */
+
 
 .content {
     position: relative;
@@ -139,9 +135,7 @@ header {
 }
 
 
-/* =========================
-   TEXTO
-   ========================= */
+
 
 .text {
     width: 50%;
@@ -152,7 +146,7 @@ header {
 }
 
 
-/* NOMBRE DE LA MARCA */
+
 
 .small-title {
     color: #a77f59;
@@ -167,7 +161,6 @@ header {
 }
 
 
-/* TITULO */
 
 .text h2 {
     color: #2b211c;
@@ -190,7 +183,7 @@ header {
 }
 
 
-/* DESCRIPCION */
+
 
 .description {
     color: #765f52;
@@ -205,9 +198,7 @@ header {
 }
 
 
-/* =========================
-   BOTON
-   ========================= */
+
 
 .btn {
     display: inline-block;
@@ -234,9 +225,7 @@ header {
 }
 
 
-/* =========================
-   NOTAS
-   ========================= */
+
 
 .details {
     display: flex;
@@ -267,9 +256,7 @@ header {
 }
 
 
-/* =========================
-   PRODUCTO
-   ========================= */
+
 
 .content-img {
     position: relative;
@@ -284,7 +271,6 @@ header {
 }
 
 
-/* CIRCULO VAINILLA */
 
 .vanilla-circle {
     position: absolute;
@@ -298,7 +284,7 @@ header {
 }
 
 
-/* IMAGEN */
+
 
 .imgMuestra {
     position: relative;
@@ -329,9 +315,7 @@ header {
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
+
 
 .footer {
     position: absolute;
@@ -350,7 +334,6 @@ header {
 }
 
 
-/* REDES */
 
 .social {
     display: flex;
@@ -371,7 +354,7 @@ header {
 }
 
 
-/* COPYRIGHT */
+
 
 .copyright {
     color: #876f61;
@@ -380,9 +363,7 @@ header {
 }
 
 
-/* =========================
-   TABLET
-   ========================= */
+
 
 @media (max-width: 900px) {
 
@@ -425,9 +406,7 @@ header {
 }
 
 
-/* =========================
-   CELULAR
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -440,8 +419,7 @@ header {
     }
 
 
-    /* HEADER */
-
+   
     header {
         height: 75px;
 
@@ -464,7 +442,7 @@ header {
     }
 
 
-    /* HERO */
+
 
     .content {
         flex-direction: column;
@@ -477,7 +455,7 @@ header {
     }
 
 
-    /* TEXTO */
+  
 
     .text {
         width: 100%;
@@ -511,7 +489,7 @@ header {
     }
 
 
-    /* NOTAS */
+    
 
     .details {
         justify-content: center;
@@ -522,7 +500,7 @@ header {
     }
 
 
-    /* PRODUCTO */
+  
 
     .content-img {
         width: 100%;
@@ -546,7 +524,7 @@ header {
     }
 
 
-    /* FOOTER */
+  
 
     .footer {
         position: relative;
