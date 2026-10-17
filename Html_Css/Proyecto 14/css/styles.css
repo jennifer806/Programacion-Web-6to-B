@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(98, 190, 251);
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/736x/80/06/9b/80069b0d55f8ad155988b78f4457da60.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section .ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+section .ondas span {
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, 0);
+}
+section .ondas span:nth-child(1) {
+  border-radius: 45%;
+  background: rgba(0, 150, 255, 0.35); /* Azul agua transparente */
+  animation: animate 8s linear infinite;
+}
+section .ondas span:nth-child(2) {
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.4); /* Espuma blanca */
+  animation: animate 12s linear infinite;
+}
+section .ondas span:nth-child(3) {
+  border-radius: 42.5%;
+  background: rgba(98, 184, 255, 0.3); /* Turquesa */
+  animation: animate 16s linear infinite;
+}
+section .content {
+  position: relative;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: #f5efef;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  text-align: center;
+  z-index: 10;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, 0) rotate(360deg);
+  }
+}/*# sourceMappingURL=styles.css.map */

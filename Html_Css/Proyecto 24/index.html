@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jennifer - La Joven de la Perla</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/estrella_png_negra_by_rubyok_d4mj7zi-fullview.png" class="nav__logo-img" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Otros Artistas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Iniciar Sesión</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Sección Principal -->
+      <section class="home container" id="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <article class="content_burbuja">
+                  <img class="box" src="https://content.arquitecturaydiseno.es/medio/2023/05/30/la-joven-de-la-perla-johannes-vermeer-1665-1667_d40d1276_230530120109_923x1081.jpg" alt="La joven de la perla" />
+                </article>
+                <div class="home__data">
+                  <h3 class="home__subtitle">#JohannesVermeer</h3>
+                  <h1 class="home__title">
+                    LA JOVEN DE<br />
+                    LA PERLA
+                  </h1>
+                  <p class="home__description">
+                    Pintada hacia 1665, esta obra maestra de Johannes Vermeer es conocida como la "Mona Lisa del Norte". La cautivadora mirada de la joven, su turbante azul lapislázuli y el sutil brillo del pendiente de perla evocan un ambiente de misterio e intimidad atemporal.
+                  </p>
+                  <div class="home__buttons">
+                    <a href="#" class="button">Ver Más</a>
+                    <a href="#" class="button--link button--flex">
+                      Johannes Vermeer
+                      <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section category" id="about">
+        <h2 class="section__title">Más obras de Vermeer</h2>
+        <div class="category__container container grid">
+          <div class="category__data">
+            <div class="contentImgCate">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMytSmW01WMtrGNRivZbqZhOqnKWj46_itC9XtS_UhQ&s=10" class="category__img" alt="La Lechera" />
+            </div>
+            <h3 class="category__title">La Lechera</h3>
+          </div>
+          <div class="category__data">
+            <div class="contentImgCate">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg/1280px-Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" class="category__img" alt="El Arte de la Pintura" />
+            </div>
+            <h3 class="category__title">El Arte de la Pintura</h3>
+          </div>
+          <div class="category__data">
+            <div class="contentImgCate">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Jan_Vermeer_van_Delft_019.jpg/1280px-Jan_Vermeer_van_Delft_019.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" class="category__img" alt="Mujer con una jarra de agua" />
+            </div>
+            <h3 class="category__title">Mujer con Jarra de Agua</h3>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section newsletter">
+        <div class="newsletter__container container"> 
+          <h2 class="section__title">Únete a nuestra galería</h2>
+          <p class="newsletter__description">
+            Suscríbete para descubrir obras maestras del arte clásico, historia del arte y actualizaciones exclusivas de nuestras colecciones.
+          </p>
+          <form class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Introduce tu correo electrónico"
+              class="newsletter__input"
+            />
+            <button class="button">Suscribirse</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer section">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="./assets/img/estrella_png_negra_by_rubyok_d4mj7zi-fullview.png" class="footer__logo-img" />
+          </a>
+          <p class="footer__description">
+            Despierta a ese <br />
+            artista interior
+          </p>
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a class="footer__social-link" href="#">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a class="footer__social-link" href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Nosotros</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Soporte</a></li>
+            <li><a href="#" class="footer__link">Características</a></li>
+            <li><a href="#" class="footer__link">Noticias</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Servicios</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Precios</a></li>
+            <li><a href="#" class="footer__link">Curso de Arte</a></li>
+            <li><a href="#" class="footer__link">Tutoriales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Compañía</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Sobre Nosotros</a></li>
+            <li><a href="#" class="footer__link">Nuestra Misión</a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">&#169; Colección Vermeer</span>
+    </footer>
+  </body>
+</html>

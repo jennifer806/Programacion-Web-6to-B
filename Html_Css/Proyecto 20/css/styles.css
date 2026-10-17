@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7d6e0;
+  width: 100%;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 7em;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 30px;
+}
+
+h2 span {
+  transition: all 0.5s ease;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+h2 span:nth-child(1):hover {
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #f4acb7, 0 0 40px #f4acb7, 0 0 60px #f4acb7;
+  transform: translateY(-8px) scale(1.05);
+}
+
+h2 span:nth-child(2):hover {
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffe5ec, 0 0 40px #ffe5ec, 0 0 60px #ffe5ec;
+  transform: translateY(-8px) scale(1.05);
+}
+
+h2 span:nth-child(3):hover {
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffb7dd, 0 0 40px #ffb7dd, 0 0 60px #ffb7dd;
+  transform: translateY(-8px) scale(1.05);
+}
+
+p.dios {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  opacity: 0.85;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+p.dios:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px #faa7cf, 0 0 25px #ef96a3;
+}
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 3.5em;
+    gap: 15px;
+  }
+  p.dios {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+  }
+}/*# sourceMappingURL=styles.css.map */
