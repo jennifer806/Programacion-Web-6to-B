@@ -1,0 +1,164 @@
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #edf5ff;
+}
+
+.container {
+  margin: 0 40px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h1 {
+  color: #173b68;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .tab {
+  position: relative;
+  background: #ffffff;
+  padding: 0 20px 20px;
+  box-shadow: 0 10px 20px rgba(31, 91, 153, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+.container .tab input {
+  display: none;
+}
+
+.container .tab label {
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.container .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: #7c9fca;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.container .tab label h2 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-right: 15px;
+  transition: all 0.5s ease;
+}
+
+.container .tab label h3 {
+  position: relative;
+  font-weight: 600;
+  color: #24476e;
+  z-index: 10;
+  font-size: 1.15em;
+  transition: all 0.5s ease;
+}
+
+.container .tab .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.container .tab .content p {
+  position: relative;
+  padding: 12px 0 0 0;
+  color: #ffffff;
+  z-index: 10;
+  line-height: 1.6;
+  font-size: 0.95em;
+  font-weight: 300;
+}
+
+.container .tab input:checked ~ label::after {
+  content: "+";
+  color: #ffffff;
+  transform: rotate(135deg);
+}
+
+.container .tab input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.18);
+  font-size: 9em;
+  font-weight: 800;
+  justify-content: flex-end;
+  padding: 20px;
+  border-radius: 0;
+  background: transparent !important;
+}
+
+.container .tab input:checked ~ label h3 {
+  background: #ffffff;
+  padding: 4px 14px;
+  color: #24476e;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container .tab input:checked ~ .content {
+  max-height: 200px;
+}
+
+
+.container .tab:nth-child(2) label h2 {
+  background: linear-gradient(135deg, #74b9ff 0%, #3d8de0 100%);
+}
+
+.container .tab:nth-child(2):has(input:checked) {
+  background: linear-gradient(135deg, #4b9ce8 0%, #2474c9 100%);
+}
+
+
+.container .tab:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #58c4e8 0%, #168abf 100%);
+}
+
+.container .tab:nth-child(3):has(input:checked) {
+  background: linear-gradient(135deg, #36b2dc 0%, #0879ae 100%);
+}
+
+
+.container .tab:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #879cff 0%, #526cda 100%);
+}
+
+.container .tab:nth-child(4):has(input:checked) {
+  background: linear-gradient(135deg, #7189ed 0%, #4057bd 100%);
+}

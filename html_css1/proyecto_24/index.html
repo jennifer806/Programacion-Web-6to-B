@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shamir</title>
+
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+   
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-text">LIL NAAY<span>.</span></span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Canciones</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#artist" class="nav__link">Sobre el artista</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#newsletter" class="nav__link">Novedades</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="home container" id="home">
+
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+
+                            <article class="content_burbuja">
+                                <img
+                                    class="box"
+                                    src="https://listindiario.com/files/vertical_main_image/uploads/2025/07/07/686bd1f4ef5e6.jpeg"
+                                    alt="Lil Naay, artista urbano dominicano"
+                                />
+                            </article>
+
+                            <div class="home__data">
+
+                                <h3 class="home__subtitle">
+                                    ARTISTA URBANO DOMINICANO
+                                </h3>
+
+                                <h1 class="home__title">
+                                    LIL<br />
+                                    NAAY
+                                </h1>
+
+                                <p class="home__description">
+                                    Desde Santo Domingo llega Lil Naay,
+                                    una de las nuevas figuras del trap
+                                    dominicano. Con su estilo urbano,
+                                    energía y personalidad, ha conquistado
+                                    al público con canciones como MAMI,
+                                    PA' TRIPEA y UNA BABY EN SANTIAGO.
+                                </p>
+
+                                <div class="home__buttons">
+
+                                    <a href="#about" class="button">
+                                        Explorar canciones
+                                    </a>
+
+                                    <a href="#artist" class="button--link button--flex">
+                                        Conocer al artista
+                                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CANCIONES DESTACADAS -->
+        <section class="section category" id="about">
+
+            <h2 class="section__title">Canciones destacadas</h2>
+
+            <div class="category__container container grid">
+
+                <div class="category__data">
+
+                    <div class="contentImgCate">
+                        <img
+                            src="https://listindiario.com/files/vertical_main_image/uploads/2025/07/07/686bd1f4ef5e6.jpeg"
+                            class="category__img"
+                            alt="Lil Naay y MAMI"
+                        />
+                    </div>
+
+                    <h3 class="category__title">MAMI</h3>
+                    <p class="category__description">
+                        Uno de los temas que impulsó su carrera.
+                    </p>
+
+                </div>
+
+
+                <div class="category__data">
+
+                    <div class="contentImgCate">
+                        <img
+                            src="https://i.audiomack.com/lilnaay/43ba6da871.webp"
+                            class="category__img"
+                            alt="Lil Naay MOOD BRAZIL"
+                        />
+                    </div>
+
+                    <h3 class="category__title">MOOD BRAZIL</h3>
+                    <p class="category__description">
+                        Un lanzamiento de su etapa musical más reciente.
+                    </p>
+
+                </div>
+
+
+                <div class="category__data">
+
+                    <div class="contentImgCate">
+                        <img
+                            src="https://i.audiomack.com/mathewediaz824/5f70c743ab.webp?width=1200"
+                            class="category__img"
+                            alt="Lil Naay UNA BABY EN SANTIAGO"
+                        />
+                    </div>
+
+                    <h3 class="category__title">UNA BABY EN SANTIAGO</h3>
+                    <p class="category__description">
+                        Una canción que amplió su alcance internacional.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SOBRE EL ARTISTA -->
+        <section class="section artist" id="artist">
+
+            <div class="artist__container container grid">
+
+                <div class="artist__data">
+
+                    <h2 class="section__title">Sobre Lil Naay</h2>
+
+                    <p class="artist__description">
+                        Lil Naay, cuyo nombre real es Edwin Almánzar Reyes,
+                        es un cantante y rapero dominicano nacido en
+                        Santo Domingo. Su música combina elementos del
+                        trap, el drill y el dembow.
+                    </p>
+
+                    <p class="artist__description">
+                        Comenzó a ganar reconocimiento con sus
+                        lanzamientos digitales y colaboraciones.
+                        Su propuesta representa el crecimiento de la
+                        nueva generación de música urbana dominicana.
+                    </p>
+
+                    <a href="#newsletter" class="button">
+                        Mantente al día
+                    </a>
+
+                </div>
+
+                <div class="artist__image">
+                    <img
+                        src="https://i.audiomack.com/lilnaay/43ba6da871.webp"
+                        alt="Fotografía promocional de Lil Naay"
+                    />
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter" id="newsletter">
+
+            <div class="newsletter__container container">
+
+                <h2 class="section__title">
+                    Únete a la comunidad
+                </h2>
+
+                <p class="newsletter__description">
+                    Suscríbete para conocer nuevos lanzamientos,
+                    canciones, colaboraciones y noticias de Lil Naay.
+                </p>
+
+                <form class="newsletter__form">
+
+                    <input
+                        type="email"
+                        placeholder="Introduce tu correo electrónico"
+                        class="newsletter__input"
+                        required
+                    />
+
+                    <button class="button" type="submit">
+                        Suscribirse
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer section">
+
+        <div class="footer__container grid">
+
+            <div class="footer__content">
+
+                <a href="#home" class="footer__logo">
+                    <span class="footer__logo-text">LIL NAAY<span>.</span></span>
+                </a>
+
+                <p class="footer__description">
+                    El sonido de una nueva generación
+                    de música urbana dominicana.
+                </p>
+
+                <div class="footer__social">
+
+                    <a class="footer__social-link" href="#">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+
+                    <a class="footer__social-link" href="#">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+
+                    <a class="footer__social-link" href="#">
+                        <i class="bx bxl-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer__content">
+
+                <h3 class="footer__title">Explorar</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link">Inicio</a></li>
+                    <li><a href="#about" class="footer__link">Canciones</a></li>
+                    <li><a href="#artist" class="footer__link">Artista</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer__content">
+
+                <h3 class="footer__title">Música</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#about" class="footer__link">MAMI</a></li>
+                    <li><a href="#about" class="footer__link">MOOD BRAZIL</a></li>
+                    <li><a href="#about" class="footer__link">UNA BABY EN SANTIAGO</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer__content">
+
+                <h3 class="footer__title">Información</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#artist" class="footer__link">Biografía</a></li>
+                    <li><a href="#newsletter" class="footer__link">Novedades</a></li>
+                    <li><a href="#header" class="footer__link">Contacto</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <span class="footer__copy">
+            © 2026 | Página dedicada a Lil Naay
+        </span>
+
+    </footer>
+
+</body>
+</html>
