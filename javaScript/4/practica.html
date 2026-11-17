@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe4ec;
+            margin: 0;
+            padding: 30px 15px;
+            color: #f6dee6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fbb7cc;
+        }
+
+        .contenedor {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .ejercicio {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #fbb7cc;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #fbb7cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #fcd1de;
+        }
+
+        .resultado {
+            background-color: #f0f4f8;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+            min-height: 25px;
+            color: #7967f0;
+        }
+
+        .tipo {
+            color: #7aaff9;
+            font-weight: bold;
+        }
+
+        .numero {
+            color: #fbb7cc;
+            font-weight: bold;
+        }
+
+        .texto {
+            color: #a9edfe;
+            font-weight: bold;
+        }
+
+        .info {
+            text-align: center;
+            color: #65758b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Actividad Práctica</h1>
+    
+        <div class="ejercicio">
+            <h2>1. Mostrar typeof de cada variable</h2>
+            <p>Comprueba el tipo de dato de las cuatro variables.</p>
+            <button onclick="ejercicio1()">Mostrar resultados</button>
+            <div class="resultado" id="resultado1"></div>
+        </div>
+
+
+        
+        <div class="ejercicio">
+            <h2>2. Suma vs concatenación</h2>
+            <p>Compara la unión de texto con una suma numérica.</p>
+            <button onclick="ejercicio2()">Mostrar resultados</button>
+            <div class="resultado" id="resultado2"></div>
+        </div>
+
+        <div class="ejercicio">
+            <h2>3. Acceder al array</h2>
+            <p>Consulta la segunda materia y la cantidad total.</p>
+            <button onclick="ejercicio3()">Mostrar resultados</button>
+            <div class="resultado" id="resultado3"></div>
+        </div>
+
+        <div class="ejercicio">
+            <h2>4. Comparación booleana</h2>
+            <p>Comprueba si la edad es mayor de 18 años.</p>
+            <button onclick="ejercicio4()">Mostrar resultados</button>
+            <div class="resultado" id="resultado4"></div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let miNombre = "TuNombre";
+        let miEdad;
+        let esEstudiante = true;
+        let materias = ["Matemática", "JS", "Historia"];
+
+        function ejercicio1() {
+            document.getElementById("resultado1").innerHTML = `
+                <p>Nombre: <span class="tipo">${typeof miNombre}</span></p>
+                <p>Edad: <span class="tipo">${typeof miEdad}</span></p>
+                <p>Estudiante: <span class="tipo">${typeof esEstudiante}</span></p>
+                <p>Materias: <span class="tipo">${typeof materias}</span></p>
+                <hr>
+                <p>miEdad devuelve undefined porque no tiene
+                ningún valor asignado.</p>
+            `;
+
+            console.log("Ejercicio 1:");
+            console.log(typeof miNombre);
+            console.log(typeof miEdad);
+            console.log(typeof esEstudiante);
+            console.log(typeof materias);
+        }
+
+
+    
+        function ejercicio2() {
+            let a = "10";
+            document.getElementById("resultado2").innerHTML = `
+                <p>"10" + 5 = <span class="texto">${a + 5}</span></p>
+                <p>Number("10") + 5 =
+                <span class="numero">${Number(a) + 5}</span></p>
+                <hr>
+                <p>La primera operación concatena texto.
+                La segunda convierte el texto en número y suma.</p>
+            `;
+
+            console.log("Ejercicio 2:");
+            console.log(a + 5);
+            console.log(Number(a) + 5);
+        }
+
+
+        
+        function ejercicio3() {
+            document.getElementById("resultado3").innerHTML = `
+                <p>Segunda materia:
+                <span class="texto">${materias[1]}</span></p>
+                <p>Total de materias:
+                <span class="numero">${materias.length}</span></p>
+            `;
+
+            console.log("Ejercicio 3:");
+            console.log(materias[1]);
+            console.log(materias.length);
+        }
+
+
+        
+        function ejercicio4() {
+            miEdad = 20
+            let resultado = miEdad > 18;
+            document.getElementById("resultado4").innerHTML = `
+                <p>Edad asignada: <span class="numero">${miEdad}</span></p>
+                <p>¿Es mayor de 18 años?:
+                <span class="tipo">${resultado}</span></p>
+                <p>Tipo de resultado:
+                <span class="tipo">${typeof resultado}</span></p>
+                <hr>
+                <p>El resultado es true porque 20 es mayor que 18.</p>
+            `;
+
+            console.log("Ejercicio 4:");
+            console.log(resultado);
+            console.log(typeof resultado);
+        }
+
+    </script>
+
+</body>
+</html>

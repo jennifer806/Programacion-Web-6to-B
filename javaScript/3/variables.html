@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .contenedor {
+            background-color: white;
+            max-width: 550px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px #e8c5d2;
+        }
+
+        h1 {
+            color: #c45d83;
+        }
+
+        p {
+            color: #6d5260;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 12px;
+            background-color: #e9a9c1;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d77fa1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Actividad práctica</h1>
+        <p>Ejercicios sobre variables en JavaScript</p>
+
+        <button onclick="asignarEdad()">1. Asignar edad</button>
+
+        <button onclick="cambiarEdad()">2. Cambiar edad</button>
+
+        <button onclick="mostrarMateria()">3. Mi materia favorita</button>
+
+        <button onclick="probarConstante()">4. Probar una constante</button>
+    </div>
+
+    <script>
+        const miNombre = "Jennifer";
+        let miEdad;
+        let miMateria;
+
+        function asignarEdad() {
+            miEdad = 21;
+
+            alert("Me llamo " + miNombre +
+                " y tengo " + miEdad + " años.");
+        }
+
+        function cambiarEdad() {
+            miEdad = 16;
+
+            alert("Mi nueva edad es " + miEdad + " años.");
+        }
+
+        function mostrarMateria() {
+            miMateria = "Desarrollo Web";
+
+            alert("Mi materia favorita es " + miMateria + ".");
+        }
+
+        function probarConstante() {
+            const miPais = "RD";
+
+            try {
+                miPais = "USA";
+            } catch (error) {
+                alert("No se puede modificar una constante. Revisa la consola (F12).");
+                console.error(error);
+            }
+        }
+    </script>
+
+</body>
+</html>

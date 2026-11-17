@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenddy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.pinimg.com/236x/45/67/24/4567242ed973d960ef2f78ccb24a9915.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="#" class="logo">
+                <img src="https://i.pinimg.com/236x/45/67/24/4567242ed973d960ef2f78ccb24a9915.jpg" alt="Logo Fortnite">
+            </a>
+
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Battle Royale</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Temporadas</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+                <button class="btnbuscar">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="banner">
+            <img src="https://i.pinimg.com/1200x/57/0f/4a/570f4a53c340f07d58e8a67eeb785fe8.jpg" alt="Personajes de Fortnite" class="bg">
+            <span class="sombraImg"></span>
+
+            <div class="content">
+                <img src="img/logo.png" class="movieTitle" alt="Fortnite">
+
+                <h4>
+                    <span>2026</span>
+                    <span><i>12+</i></span>
+                    <span>Temporada especial</span>
+                    <span>Videojuego</span>
+                </h4>
+
+                <p>
+                    En una isla donde cada segundo cuenta, los jugadores
+                    deberán luchar por sobrevivir, conseguir recursos y
+                    enfrentarse a sus enemigos. Construye tu estrategia,
+                    forma tu equipo y prepárate para la batalla definitiva.
+                    Solo uno podrá conseguir la victoria magistral.
+                </p>
+
+                <div class="buttons">
+                    <a href="#" onclick="toggleVideo(); return false;">
+                        <span class="material-icons">play_arrow</span>
+                        Jugar tráiler
+                    </a>
+                    <a href="#">
+                        <span class="material-icons">add</span>
+                        Mi lista
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="play" onclick="toggleVideo(); return false;">
+                <img src="img/play.png" alt="Reproducir">
+                Ver tráiler
+            </a>
+        </section>
+
+        <section class="trailer">
+            <video src="img/Fortnite Chapter 2 _ Launch Trailer.mp4" controls></video>
+            <img src="img/close.png" class="close" alt="Cerrar" onclick="toggleVideo();">
+        </section>
+    </main>
+
+    <script>
+        function toggleVideo() {
+            const trailer = document.querySelector(".trailer");
+            const video = document.querySelector("video");
+
+            trailer.classList.toggle("active");
+
+            if (trailer.classList.contains("active")) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+                video.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>

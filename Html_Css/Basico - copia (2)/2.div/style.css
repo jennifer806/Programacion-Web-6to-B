@@ -1,0 +1,26 @@
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cuadrito1 {
+    background-color: rgb(223, 205, 252);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+    
+
+}
+
+.cuadrito2 {
+    background-color: rgb(179, 230, 247);
+    width: 200px;
+    height: 200px;
+    border-radius: 7%;
+}

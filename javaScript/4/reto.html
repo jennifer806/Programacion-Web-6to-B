@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe4ec;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #d84996;
+        }
+
+        .formulario {
+            background-color: rgb(255, 255, 255);
+            width: 320px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #fbb7cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #203e5c;
+        }
+
+        #tarjeta {
+            background-color: white;
+            width: 320px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            display: none;
+        }
+
+        .nombre {
+            color: blue;
+        }
+
+        .edad {
+            color: orange;
+        }
+
+        .materia {
+            color: green;
+        }
+
+        .promedio {
+            color: purple;
+        }
+
+        #contador {
+            color: #243b55;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Perfil de Usuario</h1>
+    <p>Completa los siguientes datos:</p>
+
+    <div class="formulario">
+
+        <input type="text" id="nombre" placeholder="Nombre">
+
+        <input type="number" id="edad" placeholder="Edad">
+
+        <input type="text" id="materia" placeholder="Materia">
+
+        <input type="number" id="promedio" placeholder="Promedio" step="0.1">
+
+        <br>
+
+        <button onclick="crearPerfil()">Crear Perfil</button>
+
+    </div>
+
+    <div id="tarjeta"></div>
+
+    <script>
+
+        
+        let historial = [];
+
+        function crearPerfil() {
+
+            
+            let nombre = document.getElementById("nombre").value;
+            let edadTexto = document.getElementById("edad").value;
+            let materia = document.getElementById("materia").value;
+            let promedioTexto = document.getElementById("promedio").value;
+
+            
+            if (
+                nombre.trim() === "" ||
+                edadTexto === "" ||
+                materia.trim() === "" ||
+                promedioTexto === ""
+            ) {
+                alert("Debes completar todos los campos.");
+                return;
+            }
+
+           
+            let edad = Number(edadTexto);
+            let promedio = parseFloat(promedioTexto);
+
+           
+            if (typeof edad !== "number" || typeof promedio !== "number" ||
+                isNaN(edad) || isNaN(promedio)) {
+
+                alert("La edad y el promedio deben ser números.");
+                return;
+            }
+
+            
+            if (edad <= 0 || promedio < 0 || promedio > 100) {
+                alert("Introduce una edad válida y un promedio entre 0 y 100.");
+                return;
+            }
+
+            
+            historial.push(nombre);
+
+            
+            let tarjeta = document.getElementById("tarjeta");
+
+            tarjeta.style.display = "block";
+
+            tarjeta.innerHTML = `
+                <h2>Perfil de Usuario</h2>
+
+                <p class="nombre">
+                    <strong>Nombre:</strong> ${nombre}
+                </p>
+
+                <p class="edad">
+                    <strong>Edad:</strong> ${edad}
+                </p>
+
+                <p class="materia">
+                    <strong>Materia:</strong> ${materia}
+                </p>
+
+                <p class="promedio">
+                    <strong>Promedio:</strong> ${promedio}
+                </p>
+
+                <hr>
+
+                <p id="contador">
+                    Perfiles creados: ${historial.length}
+                </p>
+            `;
+
+            
+            console.log("Nombre:", typeof nombre);
+            console.log("Edad:", typeof edad);
+            console.log("Materia:", typeof materia);
+            console.log("Promedio:", typeof promedio);
+
+            console.log("Historial:", historial);
+
+        }
+
+    </script>
+
+</body>
+</html>

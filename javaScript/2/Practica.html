@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony</title>
+
+    <style>
+        body {
+            background: #264679;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 70px 20px;
+            color: #ffffff;
+        }
+
+        .contenedor {
+            background: white;
+            max-width: 650px;
+            margin: auto;
+            padding: 35px;
+            
+            box-shadow: 0 5px 20px rgba(214, 107, 148, 0.13);
+        }
+
+        h1 {
+            color: #264679;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #4b658e;
+        }
+
+        input {
+            display: block;
+            width: 85%;
+            margin: 15px auto;
+            padding: 13px;
+            border: 2px solid #264679;
+            
+            outline: none;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #280513;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        button {
+            background: #98bbf3;
+            color: #faf8fb;
+            border: none;
+            padding: 13px 20px;
+           
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #98bbf3;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .lila {
+            background: #98bbf3;
+            color: #faf8fb;
+        }
+
+        .crema {
+            background: #98bbf3;
+            color: #faf8fb;
+        }
+
+        .resultado {
+            margin-top: 25px;
+            padding: 15px;
+            background: #0c3579;
+            border-radius: 12px;
+            color: #e7ebf1;
+            min-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Actividad práctica </h1>
+        <p>Ingresa tus datos y prueba los ejercicios.</p>
+
+        <input type="text" id="nombreUsuario"
+        placeholder="Escribe tu nombre">
+
+        <input type="number" id="edad"
+        placeholder="Escribe tu edad">
+
+        <div class="botones">
+
+            <button onclick="saludo()">
+                Saludar
+            </button>
+
+            <button class="lila" onclick="presentacion()">
+                Mi presentación
+            </button>
+
+            <button class="crema" onclick="validarNombre()">
+                Verificar nombre
+            </button>
+
+            <button onclick="nombreMayuscula()">
+                Primera letra mayúscula
+            </button>
+
+        </div>
+
+        <div class="resultado" id="resultado">
+            Aquí aparecerán los resultados.
+        </div>
+
+    </div>
+
+    <script>
+
+        
+        function saludo() {
+
+            const nombre = document.getElementById("nombreUsuario").value;
+
+            if (nombre.trim() === "") {
+                alert("Escribe tu nombre.");
+            } else {
+                alert("¡Hola, " + nombre + "!");
+            }
+
+        }
+
+        
+        function presentacion() {
+
+            const nombre = document.getElementById("nombreUsuario").value;
+            const edad = document.getElementById("edad").value;
+
+            if (nombre.trim() === "") {
+                alert("Escribe tu nombre.");
+            } else if (edad.trim() === "") {
+                alert("Escribe tu edad.");
+            } else {
+                alert("Me llamo " + nombre + " y tengo " + edad + " años.");
+            }
+
+        }
+
+        
+        function validarNombre() {
+
+            const nombre = document.getElementById("nombreUsuario").value;
+
+            if (nombre.trim() === "") {
+                alert("El campo nombre está vacío.");
+            } else {
+                alert("¡El nombre está completo!");
+            }
+
+        }
+
+        
+        function nombreMayuscula() {
+
+            const nombre = document.getElementById("nombreUsuario").value.trim();
+
+            if (nombre === "") {
+                alert("Escribe tu nombre primero.");
+            } else {
+
+                const nombreCompleto =
+                    nombre.charAt(0).toUpperCase() + nombre.slice(1);
+
+                document.getElementById("resultado").textContent =
+                    "Hola, " + nombreCompleto + " .";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

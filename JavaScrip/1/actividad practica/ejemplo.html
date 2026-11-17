@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo JavaScript</title>
+
+    <style>
+        body {
+            background: #fff0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 150px;
+            color: #bd6689;
+        }
+
+        h1 {
+            color: #d77da0;
+        }
+
+        button {
+            background: #f4b8d0;
+            color: #79445b;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #df91b2;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mi primer JavaScript</h1>
+    <p>Presiona el botón para recibir un saludo.</p>
+
+    <button onclick="saludar()">Saludar</button>
+
+    <script>
+        function saludar() {
+            alert("¡Bienvenida Jennifer!");
+        }
+    </script>
+
+</body>
+</html>

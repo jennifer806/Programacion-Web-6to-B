@@ -1,0 +1,482 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+
+    background-color: #eaf5ff;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 80px 80px;
+
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    padding: 10px 80px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #c8e2f8;
+
+    z-index: 10;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 110px;
+    height: 70px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    color: #17365d;
+
+    text-decoration: none;
+
+    margin-left: 35px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+.navigation li a:hover {
+    color: #1689e8;
+}
+
+.shop {
+    background-color: #087bd5;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.shop:hover {
+    background-color: #36b5ff;
+}
+
+.content {
+    position: relative;
+
+    width: 100%;
+    max-width: 1250px;
+
+    min-height: 650px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.text {
+    width: 50%;
+
+    padding-left: 20px;
+
+    z-index: 2;
+}
+
+.small-title {
+    color: #087bd5;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    color: #102b4e;
+
+    font-size: 5.5em;
+
+    font-weight: 300;
+
+    line-height: 0.85em;
+
+    margin-bottom: 30px;
+}
+
+.text h2 span {
+    display: block;
+
+    color: #1689e8;
+
+    font-weight: bold;
+}
+
+.description {
+    color: #46627e;
+
+    font-size: 16px;
+
+    line-height: 1.7em;
+
+    max-width: 480px;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #087bd5;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 16px 30px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background-color: #36b5ff;
+}
+
+.details {
+    display: flex;
+
+    gap: 40px;
+
+    margin-top: 45px;
+}
+
+.details div {
+    border-left: 2px solid #1689e8;
+
+    padding-left: 12px;
+}
+
+.details h3 {
+    color: #102b4e;
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+.details p {
+    color: #46627e;
+
+    font-size: 13px;
+}
+
+.content-img {
+    position: relative;
+
+    width: 50%;
+
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vanilla-circle {
+    position: absolute;
+
+    width: 470px;
+    height: 510px;
+
+    background-color: #a8d9ff;
+
+    border-radius: 50%;
+}
+
+.imgMuestra {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 440px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.imgMuestra img {
+    width: 100%;
+
+    max-width: 440px;
+
+    max-height: 560px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 15px;
+}
+
+.footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+
+    gap: 15px;
+}
+
+.social a {
+    color: #17365d;
+
+    font-size: 20px;
+
+    transition: 0.25s;
+}
+
+.social a:hover {
+    color: #1689e8;
+}
+
+.copyright {
+    color: #46627e;
+
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .main {
+        padding: 110px 40px 80px;
+    }
+
+    header {
+        padding: 10px 40px;
+    }
+
+    .navigation li a {
+        margin-left: 20px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .text h2 {
+        font-size: 4.5em;
+    }
+
+    .content-img {
+        height: 500px;
+    }
+
+    .vanilla-circle {
+        width: 380px;
+        height: 380px;
+    }
+
+    .imgMuestra {
+        max-width: 370px;
+    }
+
+    .footer {
+        padding: 18px 40px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .main {
+        min-height: 100vh;
+
+        padding: 100px 20px 30px;
+
+        overflow-y: auto;
+    }
+
+    header {
+        height: 75px;
+
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 55px;
+    }
+
+    .navigation li a {
+        margin-left: 10px;
+
+        font-size: 10px;
+    }
+
+    .shop {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+        min-height: auto;
+    }
+
+    .text {
+        width: 100%;
+
+        padding-left: 0;
+    }
+
+    .small-title {
+        font-size: 10px;
+
+        margin-bottom: 15px;
+    }
+
+    .text h2 {
+        font-size: 3.5em;
+
+        line-height: 0.9em;
+
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        padding: 14px 25px;
+    }
+
+    .details {
+        justify-content: center;
+
+        gap: 25px;
+
+        margin-top: 30px;
+    }
+
+    .content-img {
+        width: 100%;
+
+        height: 360px;
+
+        margin-top: 10px;
+    }
+
+    .vanilla-circle {
+        width: 290px;
+        height: 290px;
+    }
+
+    .imgMuestra {
+        max-width: 300px;
+    }
+
+    .imgMuestra img {
+        max-height: 340px;
+    }
+
+    .footer {
+        position: relative;
+
+        padding: 15px 0 0;
+
+        margin-top: 15px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .social {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            max-width: 550px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px #e8c5d2;
+        }
+
+        h1 {
+            color: #c45d83;
+        }
+
+        p {
+            color: #6d5260;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 12px;
+            background-color: #e9a9c1;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d77fa1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <h1>Mi tarjeta de presentación</h1>
+        <p>Jennifer #14</p>
+
+        <button onclick="bienvenida()">Mostrar bienvenida</button>
+
+        <button onclick="datosAdicionales()">Mis datos adicionales</button>
+
+        <button onclick="cambiarMiEdad()">Cambiar mi edad</button>
+
+        <button onclick="cambiarConstante()">Probar una constante</button>
+    </div>
+
+    <script>
+        const nombre = "Jennifer";
+        let edad = 21;
+        let materiaFavorita = "Desarrollo Web";
+        let mipais = "RD";
+
+        function bienvenida() {
+            alert("Hola, me llamo " + nombre +
+                " y tengo " + edad +
+                " años. Soy de " + mipais + ".");
+        }
+
+        function datosAdicionales() {
+            alert("Mi materia favorita es " + materiaFavorita +
+                ". ¡Estoy aprendiendo JavaScript!");
+        }
+
+        function cambiarMiEdad() {
+            edad = 16;
+
+            alert("Mi edad ha cambiado. Ahora tengo " +
+                edad + " años.");
+        }
+
+        function cambiarConstante() {
+            const tipoEstudiante = "Estudiante";
+
+            try {
+                tipoEstudiante = "Graduada";
+            } catch (error) {
+                alert("Error: No se puede modificar una constante. Esto significa que una variable declarada con const no puede recibir otro valor después de ser creada.");
+                console.error(error);
+            }
+        }
+    </script>
+
+</body>
+</html>

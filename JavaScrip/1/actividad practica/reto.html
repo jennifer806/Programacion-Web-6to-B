@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablero de Mensajes</title>
+
+    <style>
+        body {
+            background: #fff0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px 20px;
+            color: #bd6689;
+        }
+
+        h1 {
+            color: #d77da0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        button {
+            background: #f4b8d0;
+            color: #79445b;
+            border: none;
+            padding: 15px 23px;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #df91b2;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .lila {
+            background: #e5d5f5;
+            color: #685078;
+        }
+
+        .crema {
+            background: #f9dfc4;
+            color: #805b42;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Tablero de mensajes</h1>
+
+    <p>Presiona los botones y descubre los mensajes.</p>
+
+    <div class="botones">
+
+        <button onclick="mensaje1()">Mi nombre</button>
+
+        <button class="lila" onclick="mensaje2()">
+            Mi materia favorita
+        </button>
+
+        <button class="crema" onclick="mensaje3()">
+            Mi Maestra favorita
+        </button>
+
+        <button onclick="contador()">
+            ¿Cuántos mensajes leíste?
+        </button>
+
+    </div>
+
+    <script>
+
+        let conteo = 0;
+
+        function mensaje1() {
+            conteo++;
+            alert("Mi nombre es Jennifer Linares.");
+        }
+
+        function mensaje2() {
+            conteo++;
+            alert("Mi materia favorita es Desarrollo Web.");
+        }
+
+        function mensaje3() {
+            conteo++;
+            alert(" ¡Keylaaaaa!");
+        }
+
+        function contador() {
+
+            if (conteo === 1) {
+                alert("Llevas " + conteo + " mensaje.");
+            } else {
+                alert("Llevas " + conteo + " mensajes.");
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

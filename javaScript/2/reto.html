@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony</title>
+
+    <style>
+        body {
+            background: #264679;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px 20px;
+            color: #fcf8fa;
+        }
+
+        .contenedor {
+            background: white;
+            max-width: 550px;
+            margin: auto;
+            padding: 35px;
+            
+            box-shadow: 0 5px 20px rgba(214, 107, 148, 0.13);
+        }
+
+        h1 {
+            color: #264679;
+            margin-bottom: 10px;
+        }
+
+        
+        input {
+            display: block;
+            width: 85%;
+            margin: 15px auto;
+            padding: 14px;
+            border: 2px solid #264679;
+          
+            outline: none;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #264679;
+        }
+
+        button {
+            background: #264679;
+            color: #f7f5f6;
+            border: none;
+            padding: 14px 35px;
+           
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #f2edef;
+            color: #264679;
+            transform: translateY(-3px);
+        }
+
+        .resultado {
+            background: #fff0f5;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 15px;
+            color: #264679;
+            text-align: left;
+            line-height: 1.8;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de estudiantes </h1>
+
+        
+
+        <input type="text" id="nomEst"
+        placeholder="Nombre del estudiante">
+
+        <input type="email" id="correoEst"
+        placeholder="Correo electrónico">
+
+        <input type="number" id="promedioEst"
+        placeholder="Promedio (0 - 100)" min="0" max="100">
+
+        <button onclick="registrar()">
+            Registrar estudiante
+        </button>
+
+        <div class="resultado" id="resultado"></div>
+
+    </div>
+
+    <script>
+
+        function registrar() {
+
+            const nombre = document.getElementById("nomEst").value.trim();
+            const correo = document.getElementById("correoEst").value.trim();
+            const promedioTexto = document.getElementById("promedioEst").value;
+
+            const resultado = document.getElementById("resultado");
+
+            
+            let faltantes = [];
+
+            if (nombre === "") {
+                faltantes.push("Nombre");
+            }
+
+            if (correo === "") {
+                faltantes.push("Correo electrónico");
+            }
+
+            if (promedioTexto.trim() === "") {
+                faltantes.push("Promedio");
+            }
+
+            if (faltantes.length > 0) {
+                alert(" Debes completar: " + faltantes.join(", "));
+                return;
+            }
+
+           
+            const campoCorreo = document.getElementById("correoEst");
+
+            if (!campoCorreo.checkValidity()) {
+                alert("Escribe un correo electrónico válido.");
+                return;
+            }
+
+            
+            const promedio = Number(promedioTexto);
+
+            if (promedio < 0 || promedio > 100) {
+                alert("Promedio inválido. Debe estar entre 0 y 100.");
+                return;
+            }
+
+            
+            let calificacion;
+
+            if (promedio >= 70) {
+                calificacion = "APROBADO";
+            } else {
+                calificacion = "REPROBADO";
+            }
+
+           
+            let desempeno;
+
+            if (promedio >= 90) {
+                desempeno = "Excelente";
+            } else if (promedio >= 70) {
+                desempeno = "Bueno";
+            } else {
+                desempeno = "Necesita mejorar";
+            }
+
+            
+            resultado.style.display = "block";
+
+            resultado.textContent =
+                "Registro exitoso" +
+                "\nNombre: " + nombre +
+                "\nCorreo: " + correo +
+                "\nPromedio: " + promedio +
+                "\nCalificación: " + calificacion +
+                "\nDesempeño: " + desempeno;
+
+            resultado.style.whiteSpace = "pre-line";
+
+        }
+
+    </script>
+
+</body>
+</html>

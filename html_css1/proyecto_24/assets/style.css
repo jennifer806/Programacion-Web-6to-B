@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
 :root {
   --header-height: 3.5rem;
-  /* COLORES */
   --first-color: #9b287b;
   --first-color-alt: #f04ab8;
   --title-color: #ffffff;
@@ -115,7 +114,6 @@ button {
   overflow: hidden;
 }
 
-/* BOTONES */
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -133,7 +131,6 @@ button {
   transform: translateY(-3px);
 }
 
-/* ENCABEZADO */
 .header {
   width: 100%;
   background: #100b16;
@@ -209,7 +206,6 @@ button {
   color: var(--title-color);
 }
 
-/* MENÚ PARA MÓVILES */
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -224,7 +220,6 @@ button {
     border-bottom: 2px solid var(--first-color-alt);
   }
 }
-/* PORTADA PRINCIPAL */
 .swiper-slide .home__content {
   row-gap: 2rem;
   padding-top: 3rem;
@@ -353,7 +348,6 @@ button {
   line-height: 1.6;
 }
 
-/* SOBRE EL ARTISTA */
 .artist {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -390,7 +384,6 @@ button {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-/* NEWSLETTER */
 .newsletter__description {
   text-align: center;
   margin-bottom: var(--mb-1-5);
@@ -510,7 +503,6 @@ button {
   color: var(--text-color-light);
 }
 
-/* TABLETS */
 @media screen and (max-width: 767px) {
   .category__container {
     grid-template-columns: 1fr;

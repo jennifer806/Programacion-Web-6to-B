@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    height: 250px;
+    background-color: #90949a;
+    display: flex;
+    border-radius: 25px;
+}
+
+
+.cuadro1 {
+    width: 250px;
+    height: 250px;
+    background-color: #264679;
+    border-radius: 25px;
+    
+}
+
+.cuadro2 {
+    width: 250px;
+    height: 250px;
+    background-color: #2f5798;
+    border-radius: 25px;
+}
+
+.cuadro3 {
+    width: 250px;
+    height: 250px;
+    background-color: #4787ed;
+    border-radius: 25px;
+}
+
+body {
+    margin: 0;
+}

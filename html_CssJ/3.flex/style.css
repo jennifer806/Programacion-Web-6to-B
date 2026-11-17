@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: white;
+}
+
+.container {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    gap: 100px 50px;
+}
+
+.uno {
+    background: #213d6a;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.dos {
+    background: #3c69b2;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.tres {
+    background: #5c94ef;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
